@@ -9,7 +9,7 @@
                 </h1>
                 <a 
                     href="/blog"
-                    class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
+                    class="text-center bg-purple-400 text-gray-700 py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
                     Read More
                 </a>
             </div>
