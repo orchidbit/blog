@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
-use App\Http\Controllers\SpotifyController;
+use App\Http\Controllers\SongGenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,8 @@ Route::resource('/blog', PostsController::class);
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/songgen',  [\App\Http\Controllers\SongGenController::class, 'index']);
 
 Auth::routes();
 
