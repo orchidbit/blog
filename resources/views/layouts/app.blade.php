@@ -21,7 +21,7 @@
         <header class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-white-100 no-underline">
+                    <a href="{{ url('/') }}" class="text-lg font-semibold text-white no-underline">
                         {{-- {{ config('app.name', 'Laravel') }} --}}
                         Songbird
                     </a>
