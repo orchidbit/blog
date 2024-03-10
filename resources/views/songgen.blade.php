@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
-        <div class="flex text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                    TEST TO SEE IF SONGGEN PAGE WILL WORK
-                </h1>
-            </div>
-        </div>
+<div class="w-4/5 m-auto text-center">
+    <div class="py-15 border-b border-gray-200">
+        <h1 class="text-6xl">
+            Song Finder
+        </h1>
+
     </div>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        Click the button below to find a random song!
+    </p>
+</div>
+
+@endsection
