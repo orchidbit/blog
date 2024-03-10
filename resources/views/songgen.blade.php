@@ -11,6 +11,10 @@
     <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
         Click the button below to find a random song!
     </p>
+
+    <button class="text-center bg-purple-400 text-gray-700 py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
+        Generate
+    </button>
 </div>
 
 @endsection
