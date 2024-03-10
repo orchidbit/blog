@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\SongGenController;
 use App\Http\Controllers\PlaylistsController;
+use App\Http\Controllers\ReviewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,8 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::get('/songgen',  [\App\Http\Controllers\SongGenController::class, 'index']);
 
 Route::get('/playlists',  [\App\Http\Controllers\PlaylistsController::class, 'index']);
+
+Route::get('/reviews',  [\App\Http\Controllers\ReviewsController::class, 'index']);
 
 Auth::routes();
 
