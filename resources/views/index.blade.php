@@ -4,7 +4,7 @@
     <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
+                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14" style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);">
                     Explore A World Of Music
                 </h1>
                 <a 
