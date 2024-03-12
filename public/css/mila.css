@@ -1,62 +1,87 @@
-
-.background-image
-{
-  background-image: url('/images/songbirdbg4.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 150%;
-  height: 100vh;
+html {
+    scroll-behavior: smooth;
+}
+.background-image {
+    background-image: url('/images/songbirdbg4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150%;
+    height: 100vh;
 }
 
 .navbar {
-  background: rgba(255, 198, 239, 0);
-  position: fixed;
-  width: 100%;
+    background: rgba(255, 198, 239, 0);
+    position: fixed;
+    width: 100%;
+    transition: background-image 0.5s;
 }
 
 .navcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navlinks {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navbar-transparent {
-  background: rgba(255, 198, 239, 0);
-  position: fixed;
+    background: rgba(255, 198, 239, 0);
+    position: fixed;
 }
 
 /* Reference: https://www.w3schools.com/css/css3_gradients.asp */
 .navbar-opaque {
-  background-image: linear-gradient(to right, #FFC7D3, #EFE9CF, #FE6991);
-  position: static;
+    background-image: linear-gradient(to right, #FFC7D3, #EFE9CF, #FFC7D3);
+    position: static;
 }
 
 .navlinks a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  padding-left: 10px;
-  color: rgb(103, 34, 34);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    color: rgb(103, 34, 34);
 }
 
 @media (max-width: 900px) {
-  .navbar {
-    background-image: linear-gradient(to right, #FFC7D3, #EFE9CF, #FE6991);
-  }
+    .navbar {
+        background-image: linear-gradient(to right, #FFC7D3, #EFE9CF, #FFC7D3);
+    }
 
-  .navlinks {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .navlinks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .navlinks a {
-    padding-left: 0px;
-    padding-bottom: 10px;
-  }
+    .navlinks a {
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+.navbar-scrolled {
+    background-image: linear-gradient(to right, #FFC7D3, #EFE9CF, #FFC7D3);
+}
+
+.homebtn {
+    position: relative;
+    border-radius: 10px;
+}
+
+.homebtn:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+}
+
+.homebtn:active {
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+}
+
+/* Reference:m ttps://www.w3schools.com/cssref/css_pr_scroll-margin-top.php */
+#section2 {
+    scroll-margin-top: 50px;
 }

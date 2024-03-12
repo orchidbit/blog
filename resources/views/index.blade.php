@@ -7,16 +7,17 @@
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14" style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); margin-top: 79px; margin-left: 15px;">
                     Explore A World Of Music
                 </h1>
-                <a 
-                    href="/blog"
-                    class="border-solid border-2 border-white text-center py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
-                    Read More
+                {{-- Reference for smooth scroll: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll --}}
+                <a
+                    href="#section2"
+                    class="homebtn border-solid border-2 border-white text-center py-2 px-4 font-bold text-xl uppercase">
+                    Tune In
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div id="section2" class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">

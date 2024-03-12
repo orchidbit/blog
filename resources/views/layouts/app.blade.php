@@ -62,5 +62,17 @@
 
         @yield('content')
     </div>
+    <script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var scrollPosition = window.scrollY;
+    
+        if (scrollPosition > 650) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    })
+    </script>
 </body>
 </html>
