@@ -24,17 +24,17 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 py-5">
-            <div class="container mx-auto flex justify-between items-center px-6">
+        <header class="navbar py-5 py-5">
+            <div class="navcontainer mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/') }}" class="flex items-center">
-                        <img src="images/songbirdlogo.png" alt="Logo" class="h-8 w-8 mr-2">
-                        <span class="text-lg font-semibold text-white no-underline" style="font-family: &quot;Montserrat&quot;, sans-serif;">
+                        <img src="images/songbirdlogo.png" alt="Logo" class="h-9 w-9 mr-2">
+                        <span class="text-lg font-semibold text-white no-underline" style="color: rgb(103, 34, 34); font-family: &quot;Montserrat&quot;, sans-serif;">
                             Songbird
                         </span>
                     </a>
                 </div>
-                <nav class="space-x-4 text-white text-sm sm:text-base">
+                <nav class="navlinks space-x-4 text-white text-sm sm:text-base">
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
                     <a class="no-underline hover:underline" href="/songgen">Song Finder</a>
                     <a class="no-underline hover:underline" href="/playlists">Playlists</a>

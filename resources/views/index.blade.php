@@ -4,12 +4,12 @@
     <div class="background-image grid grid-cols-1 m-auto ">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14" style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);">
+                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14" style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); margin-top: 79px; margin-left: 15px;">
                     Explore A World Of Music
                 </h1>
                 <a 
                     href="/blog"
-                    class="text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 hover:from-pink-400 hover:to-blue-400 via purple-400 py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
+                    class="text-center bg-gradient-to-r from-pink-300 to-pink-400 hover:from-pink-400 hover:to-blue-400 via purple-400 py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
                     Read More
                 </a>
             </div>
