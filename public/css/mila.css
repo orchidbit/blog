@@ -98,6 +98,7 @@ html {
     margin-top: 30px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 60px;
 }
 
 .gallery img {
@@ -127,8 +128,8 @@ html {
     color: #4B5563;
     font-weight: 900;
     font-size: 32px;
-    margin-left: 94px;
-    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
 /* Reference: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
@@ -181,4 +182,33 @@ html {
 .songtitle {
     font-weight: 700;
     font-size: 20px;
+}
+
+.musiccontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.vinyl {
+    padding: 20px;
+    margin: 100px;
+}
+
+.vinyl img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%;
+}
+
+.songs img {
+    width: 30%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
