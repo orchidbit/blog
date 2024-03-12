@@ -24,7 +24,7 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="navbar py-5 py-5">
+        <header class="navbar py-5 py-5 {{ Request::is('/') ? 'navbar-transparent' : 'navbar-opaque' }}">
             <div class="navcontainer mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/') }}" class="flex items-center">

@@ -9,7 +9,7 @@
                 </h1>
                 <a 
                     href="/blog"
-                    class="text-center bg-gradient-to-r from-pink-300 to-pink-400 hover:from-pink-400 hover:to-blue-400 via purple-400 py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
+                    class="border-solid border-2 border-white text-center py-2 px-4 font-bold text-xl uppercase" style="border-radius: 10px">
                     Read More
                 </a>
             </div>
