@@ -19,7 +19,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
@@ -28,8 +28,8 @@
             <div class="navcontainer mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/') }}" class="flex items-center">
-                        <img src="images/songbirdlogo.png" alt="Logo" class="h-9 w-9 mr-2">
-                        <span class="text-lg font-semibold text-white no-underline" style="color: rgb(103, 34, 34); font-family: &quot;Montserrat&quot;, sans-serif;">
+                        <img src="images/songbirdlogo.png" alt="Logo" class="h-10 w-10 mr-2">
+                        <span class="text-lg font-semibold text-white no-underline" style="color: rgb(103, 34, 34); font-family: &quot;Montserrat&quot;, sans-serif; font-weight: 700; font-size: 20px">
                             Songbird
                         </span>
                     </a>
