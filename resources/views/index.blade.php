@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+    <div class="background-image grid grid-cols-1 m-auto ">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14" style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);">
@@ -17,9 +17,6 @@
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
-        </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
@@ -98,3 +95,21 @@
         </div>
     </div>
 @endsection
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Tutorial Reference: https://www.youtube.com/watch?v=by-3r2eqMXA
+    // change image to small when scrolling
+    const bg = document.querySelector('.background-image');
+    const minBackgroundSize = 100;
+    window.addEventListener('scroll', function() {
+        const scrollAmount = window.pageYOffset;
+        if (scrollAmount < 600) {
+            bg.style.backgroundSize = 150 - scrollAmount / 12 + '%';
+        } else {
+            bg.style.backgroundSize = minBackgroundSize + '%';
+        }
+})
+})
+</script>

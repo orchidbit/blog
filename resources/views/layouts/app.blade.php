@@ -15,15 +15,23 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+        
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 py-6">
+        <header class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 py-5">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-white no-underline">
-                        {{-- {{ config('app.name', 'Laravel') }} --}}
-                        Songbird
+                    <a href="{{ url('/') }}" class="flex items-center">
+                        <img src="images/songbirdlogo.png" alt="Logo" class="h-8 w-8 mr-2">
+                        <span class="text-lg font-semibold text-white no-underline" style="font-family: &quot;Montserrat&quot;, sans-serif;">
+                            Songbird
+                        </span>
                     </a>
                 </div>
                 <nav class="space-x-4 text-white text-sm sm:text-base">
