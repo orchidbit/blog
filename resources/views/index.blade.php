@@ -100,8 +100,8 @@
             <img src="/images/vinyl.png">
         </div>
         <div class="songs">
-            <img src="/images/colorviolet.jpg">
-            <img src="/images/moonlight.jpg">
+            <img src="/images/colorviolet.jpg" onclick="playSong('thecolorviolet')"> <audio id="thecolorviolet" src="/images/thecolorviolet.mp3"></audio>
+            <img src="/images/moonlight.jpg"  onclick="playSong('moonlight')"> <audio id="moonlight" src="/images/moonlight.mp3"></audio>
             <img src="/images/dieforyou.jpg">
             <img src="/images/doiwannaknow.jpg">
             <img src="/images/sweaterweather.jpg">
@@ -132,4 +132,15 @@
             }
         })
     })
+
+    /* Reference: https://www.w3schools.com/jsref/met_audio_play.asp */
+    function playSong(songId) {
+    var audio = document.getElementById(songId);
+    
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
 </script>
