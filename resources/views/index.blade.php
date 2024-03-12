@@ -23,31 +23,70 @@
 
     <div class="gallery">
         <div class="card">
-            <img src="/images/heart.png">
+            <a href="/blog">
+                <img src="/images/heart.png">
+            </a>
             <div class="card-container">
-                <h4><b>Blog</b></h4>
-                <p>Lorem Ipsum</p>
+                <div class="titleandheart">
+                    <h3 class="songtitle">Blog</h3>
+                    <i class='fa fa-heart' style="font-size: 25px;"></i>
+                </div>
+                <p>Latest Music News</p>
+                <div class="playandslider">
+                    <a href="/blog"><i class="fa fa-caret-right playicon" style="font-size: 30px; color: #1D1D1B;"></i></a>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="/images/headphones.png">
+            <a href="/songgen">
+                <img src="/images/headphones.png">
+            </a>
             <div class="card-container">
-                <h4><b>Song Finder</b></h4>
-                <p>Lorem Ipsum</p>
+                <div class="titleandheart">
+                    <h3 class="songtitle">Song Finder</h3>
+                    <i class='fa fa-heart' style="font-size: 25px;"></i>
+                </div>
+                <p>Generate Random Songs</p>
+                <div class="playandslider">
+                    <a href="/songgen"><i class="fa fa-caret-right playicon" style="font-size: 30px; color: #1D1D1B;"></i></a>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="/images/weeknd.png">
+            <a href="/playlists">
+                <img src="/images/weeknd.png">
+            </a>
             <div class="card-container">
-                <h4><b>Playlists</b></h4>
-                <p>Lorem Ipsum</p>
+                <div class="titleandheart">
+                    <h3 class="songtitle">Playlists</h3>
+                    <i class='fa fa-heart' style="font-size: 25px;"></i>
+                </div>
+                <p>Collection Of Bangers</p>
+                <div class="playandslider">
+                    <a href="/playlists"><i class="fa fa-caret-right playicon" style="font-size: 30px; color: #1D1D1B;"></i></a>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="/images/hand.png">
+            <a href="/reviews">
+                <img src="/images/hand.png">
+            </a>
             <div class="card-container">
-                <h4><b>Reviews</b></h4>
-                <p>Lorem Ipsum</p>
+                <div class="titleandheart">
+                    <h3 class="songtitle">Reviews</h3>
+                    <i class='fa fa-heart' style="font-size: 25px;"></i>
+                </div>
+                <p>Song Ratings And Reviews</p>
+                <div class="playandslider">
+                    <a href="/reviews"><i class="fa fa-caret-right playicon" style="font-size: 30px; color: #1D1D1B;"></i></a>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
             </div>
         </div>
     </div>
