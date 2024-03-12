@@ -15,6 +15,7 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="/css/mila.css" rel="stylesheet">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
