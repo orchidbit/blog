@@ -83,5 +83,42 @@ html {
 
 /* Reference:m ttps://www.w3schools.com/cssref/css_pr_scroll-margin-top.php */
 #section2 {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 95px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.gallery img {
+    height: auto;
+}
+
+/* Reference: https://www.w3schools.com/howto/howto_css_cards.asp */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    margin: 1%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+    padding: 10px 20px;
+}
+
+.greytitle {
+    color: #4B5563;
+    font-weight: 900;
+    font-size: 32px;
+    margin-left: 94px;
+    margin-top: 30px;
 }
