@@ -15,7 +15,6 @@ html {
     background: rgba(255, 198, 239, 0);
     position: fixed;
     width: 100%;
-    transition: background-image 0.5s;
 }
 
 .navcontainer {
