@@ -101,7 +101,7 @@
             <img src="/images/vinylplayer.png" id="recordplayer">
         </div>
         <div class="songs">
-            <img src="/images/colorviolet.jpg" onclick="playSong('colorviolet')"> <audio id="colorviolet" src="/images/olorviolet.mp3"></audio>
+            <img src="/images/colorviolet.jpg" onclick="playSong('colorviolet')"> <audio id="colorviolet" src="/images/colorviolet.mp3"></audio>
             <img src="/images/moonlight.jpg"  onclick="playSong('moonlight')"> <audio id="moonlight" src="/images/moonlight.mp3"></audio>
             <img src="/images/dieforyou.jpg" onclick="playSong('dieforyou')"> <audio id="dieforyou" src="/images/dieforyou.mp3"></audio>
             <img src="/images/doiwannaknow.jpg" onclick="playSong('doiwannaknow')"> <audio id="doiwannaknow" src="/images/doiwannaknow.mp3"></audio>
