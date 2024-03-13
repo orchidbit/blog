@@ -110,10 +110,24 @@
         </div>
     </div>
 
-    <div class="text-center p-5 bg-gray-400 text-white">
-        <h2 class="text-2xl pb-5 text-l">
-            Created By Mila
-        </h2>
+    <img src="/images/wave.png">
+    <div class="footer">
+        <div>
+        <a href="/">Home</a>
+        </div>
+        <div>
+        <a href="/blog">Blog</a>
+        <a href="/songgen">Song Finder</a>
+        <a href="/playlists">Playlists</a>
+        </div>
+        <div>
+        <a href="/reviews">Reviews</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        </div>
+        <div>
+        <p>Created By <b>Mila</b></p>
+        </div>
     </div>
 @endsection
 

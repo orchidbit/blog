@@ -15,6 +15,7 @@ html {
     background: rgba(255, 198, 239, 0);
     position: fixed;
     width: 100%;
+    z-index: 500;
 }
 
 .navcontainer {
@@ -219,4 +220,19 @@ html {
     margin: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    padding: 50px;
+    color: #161414;
+    background-color: #CCCBCA;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
 }
