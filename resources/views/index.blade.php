@@ -101,12 +101,12 @@
             <img src="/images/vinylplayer.png" id="recordplayer">
         </div>
         <div class="songs">
-            <img src="/images/colorviolet.jpg" onclick="playSong('thecolorviolet')"> <audio id="thecolorviolet" src="/images/thecolorviolet.mp3"></audio>
+            <img src="/images/colorviolet.jpg" onclick="playSong('colorviolet')"> <audio id="colorviolet" src="/images/olorviolet.mp3"></audio>
             <img src="/images/moonlight.jpg"  onclick="playSong('moonlight')"> <audio id="moonlight" src="/images/moonlight.mp3"></audio>
-            <img src="/images/dieforyou.jpg">
-            <img src="/images/doiwannaknow.jpg">
-            <img src="/images/sweaterweather.jpg">
-            <img src="/images/feelgoodinc.png">
+            <img src="/images/dieforyou.jpg" onclick="playSong('dieforyou')"> <audio id="dieforyou" src="/images/dieforyou.mp3"></audio>
+            <img src="/images/doiwannaknow.jpg" onclick="playSong('doiwannaknow')"> <audio id="doiwannaknow" src="/images/doiwannaknow.mp3"></audio>
+            <img src="/images/sweaterweather.jpg" onclick="playSong('sweaterweather')"> <audio id="sweaterweather" src="/images/sweaterweather.mp3"></audio>
+            <img src="/images/feelgoodinc.png" onclick="playSong('feelgoodinc')"> <audio id="feelgoodinc" src="/images/feelgoodinc.mp3"></audio>
         </div>
     </div>
 
