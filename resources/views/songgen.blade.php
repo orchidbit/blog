@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @php
-$trackIds = [
+    $trackIds = [
+        // 27 songs
+    '0EfsDEYaSjGYd66Pr881nq', // Cry Baby - The Neighbourhood
+    '2qyhy9ndo8tTGMzXeHTisR', // So High - Doja Cat
     '7kJJcoJmbN0CnsYoT9VDyB', // Falling - Chase Atlantic
     '6K4t31amVTZDgR3sKmwUJJ', // The Less I Know The Better - Tame Impale
     '6TaqooOXAEcijL6G1AWS2K', // All My Friends - Snake Hips
@@ -11,7 +14,7 @@ $trackIds = [
     '5naar7XewEOAjOywIp6Jjq', // Remember When - Wallows
     '6dBUzqjtbnIa1TwYbyw5CM', // Lovers Rock - TV Girl
     '5NvOZCjZaGGGL597exlQWv', // Line Without a Hook - Ricky Montgomery
-    '3CRDbSIZ4r5MsZ0YwxuEkn', // Stressed Out - Twenty One Pilots (10)
+    '3CRDbSIZ4r5MsZ0YwxuEkn', // Stressed Out - Twenty One Pilots
     '5CM4UuQ9Gnd6K2YyKGPMoK', // Bad Habit - Steve Lacy
     '6KfoDhO4XUWSbnyKjNp9c4', // Maniac - Conan Gray
     '6EThJr4Dq1Y93JspecGU2F', // Cigarette Daydreams - Cage The Elephant
@@ -21,43 +24,59 @@ $trackIds = [
     '122OgRFuc9yZEscKx1kzRl', // Circulation - Hotel Mira
     '3znD2JTezT8ZLkp2pmft2l', // Talk to Me - Cavetown
     '110NFrhyUhxxRmMCTdzF2R', // Portland - Bowling Shoes
-    '5EYi2rH4LYs6M21ZLOyQTx', // Loving is Easy - Rex Orange County (20)
+    '5EYi2rH4LYs6M21ZLOyQTx', // Loving is Easy - Rex Orange County
     '0cQVqPuHQP4KEwc7ZUQmj6', // Sweater Weather - The Neighbourhood
     '7d8GetOsjbxYnlo6Y9e5Kw', // Mr. Brightside - The Killers
     '0rRjGruFonCGOt0S5zAJNQ', // The Other Side Of Paradise - Glass Animals
     '4lvJOtynZbT08pZO10YoOv', // BITE - Troye Sivan
-    '5t5ExTaqlvKliTz1spJV8K', // Awkward Conversations - The Front Bottoms (25)
-];
+    '5t5ExTaqlvKliTz1spJV8K', // Awkward Conversations - The Front Bottoms
+    ];
 @endphp
 
 @section('content')
-<script>
-    // Reference: Change src of an iframe: https://stackoverflow.com/questions/3730159/changing-iframe-src-with-javascript
-    function playRandomSong(trackIds) {
-        var randomIndex = Math.floor(Math.random() * trackIds.length);
-        var randomTrackId = trackIds[randomIndex];
-        var iframe = document.getElementById('spotify-embed');
-        iframe.src = 'https://open.spotify.com/embed/track/' + randomTrackId + '?utm_source=generator';
-    }
-</script>
+    <script>
+        // Reference: Change src of an iframe: https://stackoverflow.com/questions/3730159/changing-iframe-src-with-javascript
+        function playRandomSong(trackIds) {
+            var randomIndex = Math.floor(Math.random() * trackIds.length);
+            var randomTrackId = trackIds[randomIndex];
+            var iframe = document.getElementById('spotify-embed');
+            iframe.src = 'https://open.spotify.com/embed/track/' + randomTrackId + '?utm_source=generator';
+        }
+    </script>
 
-<div class="w-4/5 m-auto text-center">
-    <div class="py-15 border-b border-gray-200">
-        <h1 class="text-6xl">
-            Song Finder
-        </h1>
+    <div class="songgencontainer">
+        <div class="greytitle2">Song Finder</div>
 
+        <p style="color: #4B5563;">Click the button below to find a random song!</p>
+
+        {{-- Reference for json-encode: https://www.w3schools.com/php/func_json_encode.asp#:~:text=The%20json_encode()%20function%20is,a%20value%20to%20JSON%20format. --}}
+        <button onclick="playRandomSong({{ json_encode($trackIds) }})" class="genbtn">
+            Generate
+        </button>
+        <iframe id="spotify-embed" style="border-radius: 12px; margin: 0 auto; display: block;"
+            src="https://open.spotify.com/embed/track/{{ $trackIds[0] }}?utm_source=generator" width="50%" height="352"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br><br><br><br><br>
     </div>
-    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-        Click the button below to find a random song!
-    </p>
 
-    {{-- Reference for json-encode: https://www.w3schools.com/php/func_json_encode.asp#:~:text=The%20json_encode()%20function%20is,a%20value%20to%20JSON%20format. --}}
-    <button onclick="playRandomSong({{ json_encode($trackIds) }})" class="text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 hover:from-pink-400 hover:to-blue-400 via purple-400 py-2 px-4 font-bold text-xl uppercase text-gray-700" style="border-radius: 50px; margin-bottom: 30px;">
-        Generate
-    </button>
-    <iframe id="spotify-embed" style="border-radius: 12px; margin: 0 auto; display: block;" src="https://open.spotify.com/embed/track/{{ $trackIds[0] }}?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <br>
-</div>
-
+    <img src="/images/wave.png">
+    <div class="footer">
+        <div>
+        <a href="/">Home</a>
+        </div>
+        <div>
+        <a href="/blog">Blog</a>
+        <a href="/songgen">Song Finder</a>
+        <a href="/playlists">Playlists</a>
+        </div>
+        <div>
+        <a href="/reviews">Reviews</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        </div>
+        <div>
+        <p>Created By <b>Mila</b></p>
+        </div>
+    </div>
 @endsection

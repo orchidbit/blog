@@ -42,7 +42,7 @@
             </span>
 
             <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                {{ $post->description }}
+                {{ \Illuminate\Support\Str::limit($post->description, 300) }} {{-- Reference: https://devdojo.com/bobbyiliev/how-to-limit-the-length-of-a-string-in-laravel --}}
             </p>
 
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
@@ -77,5 +77,25 @@
         </div>
     </div>    
 @endforeach
+<br><br>
+<img src="/images/wave.png">
+    <div class="footer">
+        <div>
+        <a href="/">Home</a>
+        </div>
+        <div>
+        <a href="/blog">Blog</a>
+        <a href="/songgen">Song Finder</a>
+        <a href="/playlists">Playlists</a>
+        </div>
+        <div>
+        <a href="/reviews">Reviews</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        </div>
+        <div>
+        <p>Created By <b>Mila</b></p>
+        </div>
+    </div>
 
 @endsection

@@ -236,3 +236,42 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+.genbtn {
+    position: relative;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #F996AB, #FE4D7E);
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 7px #6C414C;
+    margin: 50px;
+    outline: none;
+}
+
+.genbtn:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+    outline: none;
+}
+
+.genbtn:active {
+    background-image: linear-gradient(to left, #F996AB, #FE4D7E);
+    box-shadow: 0 4px #44282f;
+    transform: translateY(4px);
+    outline: none;
+}
+
+.songgencontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greytitle2 {
+    color: #4B5563;
+    font-weight: 900;
+    font-size: 32px;
+    margin: 20px;
+}
