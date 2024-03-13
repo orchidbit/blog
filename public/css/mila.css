@@ -193,12 +193,20 @@ html {
 }
 
 .vinyl {
+    position: relative;
     padding: 20px;
     margin: 100px;
 }
 
-.vinyl img {
+#recordplayer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#vinylimg {
+    position: absolute;
+    top: 14%;
+    left: 9%;
+    height: 75%;
 }
 
 .songs {

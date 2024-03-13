@@ -97,7 +97,8 @@
 
     <div class="musiccontainer">
         <div class="vinyl">
-            <img src="/images/vinyl.png">
+            <img src="/images/vinyl.png" id="vinylimg">
+            <img src="/images/vinylplayer.png" id="recordplayer">
         </div>
         <div class="songs">
             <img src="/images/colorviolet.jpg" onclick="playSong('thecolorviolet')"> <audio id="thecolorviolet" src="/images/thecolorviolet.mp3"></audio>
@@ -136,11 +137,14 @@
     /* Reference: https://www.w3schools.com/jsref/met_audio_play.asp */
     function playSong(songId) {
     var audio = document.getElementById(songId);
+    var vinylspin = document.getElementById('vinylimg');
     
     if (audio.paused) {
         audio.play();
+        vinylspin.style.animation = 'spin 2s linear infinite';
     } else {
         audio.pause();
+        vinylspin.style.animation = 'none';
     }
 }
 </script>
