@@ -141,7 +141,7 @@
     
     if (audio.paused) {
         audio.play();
-        vinylspin.style.animation = 'spin 2s linear infinite';
+        vinylspin.style.animation = 'spin 3s linear infinite';
     } else {
         audio.pause();
         vinylspin.style.animation = 'none';
