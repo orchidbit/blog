@@ -1,14 +1,16 @@
 ## Laravel 8 Complete Blog
 
-This repository is linked to [this youtube video](https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4710s) where I show you how to create a complete blog in Laravel 8 using best practices.
-
-•	Author: Code With Dary <br>
-•	Twitter: [@codewithdary](https://twitter.com/codewithdary) <br>
-•	Instagram: [@codewithdary](https://www.instagram.com/codewithdary/) <br>
-
 ## Requirements
 •	PHP 7.3 or higher <br>
 •	Node 12.13.0 or higher <br>
+
+## Features
+•	Pleasant UI themed after music and songs.
+•	Music blog featuring the latest news in the music industry. Add, edit and delete blog posts.
+•	Generate random songs to listen to with just the click of a button.
+•	Listen to current top songs on the site.
+•	Find new songs from my music reviews and playlists.
+
 
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
@@ -44,6 +46,3 @@ Migrate the tables
 ```
 php artisan migrate
 ```
-
-## Contributing
-Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
