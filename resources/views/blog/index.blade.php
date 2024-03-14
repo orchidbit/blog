@@ -1,11 +1,16 @@
 @extends('layouts.app')
 
+@php
+    $totalPosts = count($posts);
+@endphp
+
 @section('content')
 <div class="w-4/5 m-auto text-center">
-    <div class="py-15 border-b border-gray-200">
         <h1 class="text-6xl">
             Blog Posts
         </h1>
+    <div class="py-15 border-b border-gray-200">
+    <p style="color: #374151; font-size: 20px; font-weight: 500">Total number of posts: {{ $totalPosts }}</p>
     </div>
 </div>
 
@@ -77,6 +82,7 @@
         </div>
     </div>    
 @endforeach
+
 <br><br>
 <img src="/images/wave.png">
     <div class="footer">
