@@ -29,7 +29,7 @@ php artisan cache:clear && php artisan config:clear
 php artisan serve
 ```
 
-## Before starting<br>
+## Before starting 👩‍💻<br>
 Create a database <br>
 ```
 mysql
