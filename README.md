@@ -6,10 +6,12 @@
 
 ## Features 🎵 
 •	Pleasant UI themed after music and songs. <br>
-•	Music blog featuring the latest news in the music industry. Add, edit and delete blog posts. <br>
-•	Generate random songs to listen to with just the click of a button. <br>
+•	Music blog featuring the latest news in the music industry. <br>
+•   Add, edit and delete blog posts. <br>
 •	Listen to current top songs on the site. <br>
-•	Find new songs from my music reviews and playlists. <br>
+•	Generate random songs to listen to with just the click of a button. <br>
+•   Listen to songs from Spotify as an embed on the site, and add songs to your Spotify liked. <br>
+•	Find new songs from the music reviews and playlists page. <br>
 
 ## Technologies Used 🖥️
 • Visual Studio Code <br>
