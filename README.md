@@ -11,6 +11,10 @@
 •	Listen to current top songs on the site. <br>
 •	Find new songs from my music reviews and playlists. <br>
 
+## Technologies Used
+• Visual Studio Code
+• XAMPP
+• Html, CSS, JavaScript, PHP
 
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
@@ -45,4 +49,20 @@ DB_PASSWORD={PASSWORD}
 Migrate the tables
 ```
 php artisan migrate
+```
+
+## Testing
+Use the following command to tests for the application: <br>
+```
+php artisan test
+```
+
+## Commands to compile laravel mix
+```
+composer require laravel-frontend-presets/tailwindcss --dev
+php artisan ui tailwindcss --auth
+npm remove laravel-mix
+npm install laravel-mix --save-dev
+npm install cross-env --save-dev
+npm run watch
 ```
