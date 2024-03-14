@@ -5,11 +5,11 @@
 •	Node 12.13.0 or higher <br>
 
 ## Features
-•	Pleasant UI themed after music and songs.
-•	Music blog featuring the latest news in the music industry. Add, edit and delete blog posts.
-•	Generate random songs to listen to with just the click of a button.
-•	Listen to current top songs on the site.
-•	Find new songs from my music reviews and playlists.
+•	Pleasant UI themed after music and songs. <br>
+•	Music blog featuring the latest news in the music industry. Add, edit and delete blog posts. <br>
+•	Generate random songs to listen to with just the click of a button. <br>
+•	Listen to current top songs on the site. <br>
+•	Find new songs from my music reviews and playlists. <br>
 
 
 ## Usage <br>
