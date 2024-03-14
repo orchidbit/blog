@@ -12,9 +12,10 @@
 •	Find new songs from my music reviews and playlists. <br>
 
 ## Technologies Used
-• Visual Studio Code
-• XAMPP
-• Html, CSS, JavaScript, PHP
+• Visual Studio Code <br>
+• XAMPP <br>
+• Html, CSS, JavaScript <br>
+• PHP, Blade <br>
 
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
