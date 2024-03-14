@@ -324,3 +324,46 @@ html {
     color: #4B5563;
     margin-bottom: 15px;
 }
+
+.reviewscontainer {
+    margin: 50px;
+}
+
+.reviewcard {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.reviewtext {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.reviewcard img {
+    height: 180px;
+}
+
+.fa-star {
+    color: #ffdf5e;
+}
+
+.fa-star-half {
+    color: #ffdf5e;
+}
+
+.reviewtitle h5 {
+    font-weight: 700;
+    font-size: 20px;
+    width: 200px;
+}
+
+.reviewtitle p {
+    color: #4B5563;
+}
