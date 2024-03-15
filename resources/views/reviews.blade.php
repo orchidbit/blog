@@ -43,7 +43,6 @@
                             <p>{{ $review->artist }}</p>
                         </div>
                         <div>
-                            <!-- Convert rating to stars -->
                             <div style="font-size: 30px">
                                 @for ($i = 1; $i <= $review->rating; $i++)
                                     <i class="fa fa-star"></i>
