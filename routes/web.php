@@ -37,3 +37,5 @@ Auth::routes();
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/blog/{slug}/like', [PostsController::class, 'like'])->name('posts.like');
+
+Route::post('/reviews',  [\App\Http\Controllers\ReviewsController::class, 'store'])->name('reviews.store');
