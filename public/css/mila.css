@@ -63,10 +63,6 @@ html {
         padding-bottom: 10px;
     }
 
-    .gallery {
-        flex-direction: column;
-    }
-
     .playlistscontainer {
         flex-direction: column;
         align-items:center;
@@ -95,6 +91,44 @@ html {
         flex-wrap: wrap;
     }
 
+    .musiccontainer {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90% !important;
+        margin: 10px;
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+    
+    .songtitle {
+        font-size: 18px;
+    }
+    .fa-heart {
+        font-size: 20px;
+    }
+    .playicon {
+        font-size: 25px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .navbar-scrolled {
@@ -437,8 +471,7 @@ input[type="file"] {
     box-sizing: border-box;
 }
 
-
-button[type="submit"] {
+.review-form [type="submit"] {
     width: 100%;
     height: 40px;
     background-color: #FB7697;
