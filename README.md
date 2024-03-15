@@ -1,4 +1,5 @@
 ## Laravel 8 Complete Blog
+![songbirdhomepage](https://github.com/orchidbit/blog/assets/111306604/6540d2aa-344c-44c1-84ac-6192ed6a86cc)
 
 ## Requirements 📄
 •	PHP 7.3 or higher <br>
