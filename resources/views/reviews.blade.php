@@ -6,11 +6,11 @@
         <p style="color: #4B5563;">Review and rate songs</p><br>
         <div>
 
-            <form method="POST" action="{{ route('reviews.store') }}" enctype="multipart/form-data">
+            <form class="review-form" method="POST" action="{{ route('reviews.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+                    <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
                 </div>
                 <div class="form-group">
                     <label for="song_name">Song Name</label>
@@ -23,6 +23,7 @@
                 <div class="form-group">
                     <label for="rating">Rating</label>
                     <select name="rating" class="form-control" required>
+                        <option value="" disabled selected>Select Rating</option>
                         <option value="1">1 Star</option>
                         <option value="2">2 Stars</option>
                         <option value="3">3 Stars</option>

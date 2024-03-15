@@ -90,6 +90,11 @@ html {
         flex-direction: column;
         align-items: center;
     }
+
+    .review-form {
+        flex-wrap: wrap;
+    }
+
 }
 
 .navbar-scrolled {
@@ -402,4 +407,49 @@ html {
     font-size: 30px;
     position: absolute;
     margin-top: -7px;
+}
+
+.review-form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #FB7697;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 28px;
+}
+
+button[type="submit"]:hover {
+    background-color: #b64d67;
 }
