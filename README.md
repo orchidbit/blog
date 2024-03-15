@@ -1,4 +1,5 @@
 ## Laravel 8 Complete Blog
+![image1](https://github.com/orchidbit/blog/assets/111306604/6540d2aa-344c-44c1-84ac-6192ed6a86cc)
 
 ## Requirements 📄
 •	PHP 7.3 or higher <br>
@@ -12,6 +13,9 @@
 •	Generate random songs to listen to with just the click of a button. <br>
 •   Listen to songs from Spotify as an embed on the site, and add songs to your Spotify liked. <br>
 •	Find new songs from the music reviews and playlists page. <br>
+
+![image2](https://github.com/orchidbit/blog/assets/111306604/eb37705e-18f7-4f8b-8738-3282d7221741)
+![image3](https://github.com/orchidbit/blog/assets/111306604/a1e5ef59-0ddb-4180-8112-ea8f29c29456)
 
 ## Technologies Used 🖥️
 • Visual Studio Code <br>
