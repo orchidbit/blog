@@ -66,6 +66,20 @@ html {
     .gallery {
         flex-direction: column;
     }
+
+    .playlistscontainer {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .playlist {
+        margin-bottom: 20px;
+        width: 80% !important;
+    }
+
+    .playlistsong img {
+        width: 30%;
+    }
 }
 
 .navbar-scrolled {
