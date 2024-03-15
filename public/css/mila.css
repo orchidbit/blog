@@ -80,6 +80,16 @@ html {
     .playlistsong img {
         width: 30%;
     }
+
+    .reviewtitle {
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .reviewcard {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .navbar-scrolled {
@@ -356,12 +366,13 @@ html {
 }
 
 .reviewtext {
-    width: 400px;
     margin-top: 10px;
+    max-width: 400px;
 }
 
 .reviewcard img {
     height: 180px;
+    margin-right: 10px;
 }
 
 .fa-star {
@@ -375,11 +386,12 @@ html {
 .reviewtitle h5 {
     font-weight: 700;
     font-size: 20px;
-    width: 200px;
+    margin-right: 10px;
 }
 
 .reviewtitle p {
     color: #4B5563;
+    min-width: 250px;
 }
 
 #like-form {
