@@ -76,6 +76,13 @@ class PostsController extends Controller
             ->with('post', Post::where('slug', $slug)->first());
     }
 
+    public function like($slug)
+    {
+    $post = Post::where('slug', $slug)->firstOrFail();
+    $post->increment('likes');
+    return response()->json(['success' => true, 'likes' => $post->likes]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

@@ -367,3 +367,13 @@ html {
 .reviewtitle p {
     color: #4B5563;
 }
+
+#like-form {
+    padding: 50px;
+}
+
+.like-btn {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -7px;
+}

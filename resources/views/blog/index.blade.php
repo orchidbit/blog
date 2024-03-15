@@ -50,6 +50,13 @@
                 {{ \Illuminate\Support\Str::limit($post->description, 300) }} {{-- Reference: https://devdojo.com/bobbyiliev/how-to-limit-the-length-of-a-string-in-laravel --}}
             </p>
 
+            <form id="like-form-{{ $post->id }}" action="{{ route('posts.like', $post->slug) }}" method="POST" target="like-iframe" class="like-form">
+                @csrf
+                <button type="submit" class="like-btn"><i class="fa fa-heart"></i></button>
+            </form>
+            <span id="like-count-{{ $post->id }}" style="margin: 50px; color: #FB4377; font-weight: 700;">{{ $post->likes }}</span>
+            <iframe id="like-iframe" name="like-iframe" style="display: none;"></iframe>
+
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
             </a>
@@ -64,7 +71,7 @@
                 </span>
 
                 <span class="float-right">
-                     <form 
+                    <form 
                         action="/blog/{{ $post->slug }}"
                         method="POST">
                         @csrf
@@ -82,6 +89,21 @@
         </div>
     </div>    
 @endforeach
+
+<script>
+    document.querySelectorAll('.like-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const postId = this.getAttribute('id').split('-')[2];
+            const iframe = document.getElementById('like-iframe');
+            iframe.onload = function() {
+                const likes = JSON.parse(iframe.contentDocument.body.innerText).likes;
+                document.getElementById('like-count-' + postId).innerText = likes;
+            };
+            this.submit();
+        });
+    });
+</script>
 
 <br><br>
 <img src="/images/wave.png">
